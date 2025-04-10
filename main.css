@@ -54,7 +54,12 @@ body{
         border-radius: 1rem;
         width: 25em;
     }
-   
+ footer{
+        color: var(--paragraph-color);
+        margin-left: 100rem;
+        margin-top: 20rem;
+        cursor: pointer;
+    }
 }
 .main_container .header{
     text-align: center;
@@ -76,21 +81,27 @@ border-radius: 5rem;
     display: grid;
     gap: 1rem;
     margin-top: 2rem;
+    align-items: center;
 }
-.main_container .button_div .text_button{
-    width: 20rem;
-    height: 3rem;
+
+.main_container .button_div .anchor_text{
     background-color: var(--button_color);
-    border-radius: 1rem;
-    border: none;
-    font-weight: bolder;
-    cursor: pointer;
- 
-}
-.main_container .button_div .text_button a{
-    color: var(--text-color);
+    width: 15rem;
+    height: 3rem;
+    text-align: center;
     text-decoration: none;
+    color: var(--text-color);
+    border-radius: 4rem;
+    font-weight: bolder;
+
 }
-.main_container .button_div .text_button:hover{
-background-color: var(--paragraph-color);
+.main_container .button_div .anchor_text:hover{
+    /* color: var(--paragraph-color); */
+    background-color: var(--paragraph-color);
+}
+footer{
+    color: var(--paragraph-color);
+    margin-left: 5rem;
+    margin-top: 4rem;
+    cursor: pointer;
 }
