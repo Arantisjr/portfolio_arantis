@@ -1,0 +1,91 @@
+:root{
+    --body_color:hsl(0, 0%, 8%);
+    --container_color: hsl(0, 0%, 12%);
+    --button_color: hsl(0, 0%, 20%);
+    --text-color: hsl(0, 0%, 100%);
+    --paragraph-color:hsl(75, 94%, 57%);
+}
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+   
+
+}
+body{
+    color: var(--text-color);
+    background-color: var(--body_color);
+    padding:8rem 1rem 8rem 1rem;
+    font-family: "Inter", sans-serif;
+    line-height: 2em;
+    height: 100vh;
+    /* font-size: clamp(1rem, .5vw + 1rem, 2vw); */
+}
+.main_container{
+    background-color: var(--container_color);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+    border-radius: 1rem;
+}
+
+@media (width >= 60em){
+    body{
+        color: var(--text-color);
+        background-color: var(--body_color);
+        padding:8rem 1rem 8rem 1rem;
+        font-family: "Inter", sans-serif;
+        line-height: 2em;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+    .main_container{
+        background-color: var(--container_color);
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 2rem;
+        border-radius: 1rem;
+        width: 25em;
+    }
+   
+}
+.main_container .header img{
+height: 7rem;
+width: 7rem;
+border-radius: 5rem;
+margin-left: 4rem;
+}
+.main_container .header h1{
+    margin-top: 1rem;
+}
+.header h3{
+    margin-top: .5rem;
+    color:var(--paragraph-color);
+    margin-bottom: 1rem;
+}
+.main_container .button_div{
+    display: grid;
+    gap: 1rem;
+    margin-top: 2rem;
+}
+.main_container .button_div .text_button{
+    width: 20rem;
+    height: 3rem;
+    color: var(--text-color);
+    background-color: var(--button_color);
+    border-radius: 1rem;
+    border: none;
+    font-weight: bolder;
+    cursor: pointer;
+ 
+}
+.main_container .button_div .text_button:hover{
+background-color: var(--paragraph-color);
+}
