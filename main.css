@@ -15,7 +15,6 @@
 body {
     color: var(--text-color);
     background-color: var(--body-color);
-    padding: 8rem 1rem;
     font-family: "Inter", sans-serif;
     line-height: 2em;
     height: 100vh;
@@ -35,6 +34,7 @@ body {
     border-radius: 1rem;
     text-align: center;
     width: 25em;
+    margin-top: 10rem;
 }
 
 .header {
